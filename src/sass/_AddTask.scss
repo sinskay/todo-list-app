@@ -1,0 +1,44 @@
+@use './variables' as *;
+
+
+
+
+.add-section {
+    margin-top: 2rem;
+    text-align: center;
+
+    .section-title {
+        background-image: linear-gradient(to bottom, $linearTop,$linearBottom);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+    }
+    .input-group {
+        width: 65%;
+        margin: 2rem auto;
+        .form-control {
+            border: 2px solid #284667;
+            border-right: none;
+            font-size: 1.05rem;
+            letter-spacing: .4px;
+            font-weight: 500;
+            &:focus {
+                border-color: #000;
+                outline: 0;
+                box-shadow: none;
+            }
+            &::placeholder {
+                font-size: 1.05rem;
+                letter-spacing: .4px;
+                font-weight: 400;
+                color: #808080;
+            }
+        }
+        .input-group-text {
+            border: 2px solid $darkBlue;
+            background-color: $darkBlue;
+        }
+        
+    }
+}
